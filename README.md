@@ -9,7 +9,7 @@
 <br/>
 <br/>
 
-### Usage
+### 🇧🇷 Modo de usar - 🇺🇸 Usage
 
 ##### 🇧🇷 PT-BR
 ##### 1 - Ir na aba de minhas conexões (/mynetwork);
