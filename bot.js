@@ -9,7 +9,7 @@ let [i, limite, conteudo] = [
       console.log("Finalizou a automacao " + limite);
       clearInterval(intervalo);
     }
-    i++;
+    i = i + 5;
     try {
       let botao = document.querySelector(`#ember${i}`);
       if (botao.ariaLabel.toLowerCase().includes("conectar")) {
@@ -50,7 +50,7 @@ let [i, limite, conteudo] = [
       console.log("Finalizou a automacao " + limite);
       clearInterval(intervalo);
     }
-    i++;
+    i = i + 5;
     try {
       let botao = document.querySelector(`#ember${i}`);
       if (botao.ariaLabel.toLowerCase().includes("connect")) {
