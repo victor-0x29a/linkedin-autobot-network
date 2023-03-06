@@ -14,14 +14,14 @@
 ##### 🇧🇷 PT-BR
 ##### 1 - Ir na aba de minhas conexões (/mynetwork);
 ##### 2 - Abrir o console do navegador;
-##### 3 - Colar o código do arquivo *bot.js* e pressionar enter;
+##### 3 - Colar o código do arquivo *bot.js* de acordo com seu idioma local e pressionar enter;
 
 <br/>
 
 ##### 🇺🇸 EN
 ##### 1 - Go to my connections tab (/mynetwork)
 ##### 2 - Open the browser console;
-##### 3 - Paste the code from the *bot.js* file and press enter;
+##### 3 - Paste the code from the *bot.js* file according to your local language and press enter;
 
 <br/>
 <br/>
