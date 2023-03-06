@@ -31,9 +31,11 @@
 ##### 🇧🇷 PT-BR
 ##### 1 - O botão de se conectar do linkedin possui um ID chamado "embed" seguido de um número, então eu fiz um range de X até Y, então vai aparecer no console que o botão não foi encontrado, isso é normal, pois ele está buscando no range.
 ##### 2 - O Linkedin possui um limite semanal, então quando alertar é só fechar o navegador e abrir novamente ou apenas limpar o intervalo.
+##### 3 - Não abuse da ferramenta, use ela tendo um intervalo de 1 a 2 semanas, pois o linkedin consegue identificar o uso de ferramentas externas.
 
 <br/>
 
 ##### 🇺🇸 EN
 ##### 1 - The linkedin connect button has an ID called "embed" followed by a number, so I made a range from X to Y, so it will appear on the console that the button was not found, that is normal, because he is searching in the range.
 ##### 2 - Linkedin has a weekly limit, so when alert just close the browser and open again or just clear the range.
+##### 3 - Do not abuse the tool, use it with an interval of 1 to 2 weeks, as linkedin can identify the use of external tools.
