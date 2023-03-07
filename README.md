@@ -1,4 +1,4 @@
-### Info
+
 
 ##### 🇧🇷 Automação em JavaScript para se conectar com outras pessoas automaticamente.
 
