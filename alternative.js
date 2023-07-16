@@ -1,3 +1,6 @@
+// OBS: ESSe aqui não foi feito um stop quando atingir o limite ainda então quando o limite for atingido, tem q atualizar a pagina para o codigo parar de rodar
+// IMPORTANTE
+
 setInterval(()=>{
   let divs = document.querySelectorAll('.mt2');
 
