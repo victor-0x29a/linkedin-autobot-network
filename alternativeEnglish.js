@@ -11,11 +11,12 @@
 
 // FROM HERE ************
 const passTheSelectorDivId = 'ember1642' // pass only the string WITHOUT # // This is just an example value
-const sectorId = document.querySelector(`#${passTheSelectorDivId}`);
-if(sectorId){
-  var divs = sectorId.querySelectorAll('.mt2');
-}else{
-  var divs = document.querySelectorAll('.mt2');
+const sectorId = document.querySelector('#' + passeOIdDaDivSeletora);
+var divs;
+if (sectorId) {
+  divs = sectorId.querySelectorAll('.mt2');
+} else {
+  divs = document.querySelectorAll('.mt2');
 }
 let count = 0; // iteration counter
 const numMaxIteration = 50; // Maximum number of iterations, I recommend leaving it at 50, if needed, update and run again
