@@ -7,7 +7,7 @@ function executaMissaoDosConectados() {
   divs.forEach((div, index) => {
     if (count < numMaxIteration) { // Verifica se o limite de 100 iterações ainda não foi atingido
       let botoes = div.querySelector('button');
-      const delay = 7000; // Atraso de 7 segundos
+      const delay = 7000; // Atraso de 7 segundos para cada requisição
       setTimeout(() => {
         console.log(
           botoes.ariaLabel
