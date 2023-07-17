@@ -4,8 +4,19 @@
 
 //copie apenas o código que você vai usar
 
+/**
+ * O passeOIdDaDivSeletora é o id da section onde vai estar todos os campos com botão para fazer conexão
+ * foi uma forma de limitar a area para que funcione 100% a seleção
+ */
+
 // DAQ ************
-let divs = document.querySelectorAll('.mt2');
+const passeOIdDaDivSeletora = 'ember1642' // passe apenas a string SEM # // Esse é apenas um valor de exemplo
+const sectorId = document.querySelector(`#${passeOIdDaDivSeletora}`);
+if(sectorId){
+  var divs = sectorId.querySelectorAll('.mt2');
+}else{
+  var divs = document.querySelectorAll('.mt2');
+}
 let count = 0; // contador de iterações
 const numMaxIteration = 50; // Numero maximo de iterações, recomendo deixar 50, se precisar atualize e faça de novo
 const delay = 7000; // Atraso de 7 segundos para cada requisição, não recomendado valores menores que 1000
@@ -14,13 +25,6 @@ function executaMissaoDosConectados() {
     try {
       let div = divs[count];
       let botoes = div.querySelector('button');
-      console.log(
-        botoes.ariaLabel
-          .toLowerCase()
-          .replace("conectar", "")
-          .replace("para se", "")
-          .replace("convidar", "") + " Enviou solicitação"
-      );
       botoes.click();
       count++; // Incrementa o contador de iterações
       console.log(`Enviou conexao ${count} \n`);
