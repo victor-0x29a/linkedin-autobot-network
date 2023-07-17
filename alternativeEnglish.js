@@ -1,27 +1,30 @@
-//INFO-ENG: Just copy one of the versions, English or Portuguese, edit the time you want the requests to be made, currently it is 7 per second
-//ENGLISH
+// CURRENT VERSION
+//INFO-EN: Just copy one of the versions, English or Portuguese, edit the time you want the requests to be made, currently it's 7 per second
+//PORTUGUESE // tested and working, but errors were not handled
 
-//just copy the code you are going to use
+//copy only the code you will use
 
-// CURRENT VERSION tested and working, but errors were not handled 
+/**
+  The passTheSelectorDivId is the id of the section where all the fields with connection buttons will be located.
+  It was a way to limit the area for the selection to work 100%.
+*/
 
 // FROM HERE ************
-let divs = document.querySelectorAll('.mt2');
+const passTheSelectorDivId = 'ember1642' // pass only the string WITHOUT # // This is just an example value
+const sectorId = document.querySelector(`#${passTheSelectorDivId}`);
+if(sectorId){
+  var divs = sectorId.querySelectorAll('.mt2');
+}else{
+  var divs = document.querySelectorAll('.mt2');
+}
 let count = 0; // iteration counter
-const numMaxIteration = 50; // Maximum number of iterations, recommend leaving it as 50, if needed, update and run again
-const delay = 5000; // 5-second delay for each request, not recommended values lower than 1000
+const numMaxIteration = 50; // Maximum number of iterations, I recommend leaving it at 50, if needed, update and run again
+const delay = 7000; // Delay of 7 seconds for each request, not recommended values lower than 1000
 function executeConnectedMission() {
   if (count < numMaxIteration && count < divs.length) {
     try {
       let div = divs[count];
       let buttons = div.querySelector('button');
-      console.log(
-        buttons.ariaLabel
-          .toLowerCase()
-          .replace("connect", "")
-          .replace("to", "")
-          .replace("to invite", "") + " Sent request"
-      );
       buttons.click();
       count++; // Increment the iteration counter
       console.log(`Sent connection ${count} \n`);
@@ -39,7 +42,7 @@ function executeConnectedMission() {
       setTimeout(executeConnectedMission, delay);
     }
   } else {
-    console.log(`Reached limit of ${numMaxIteration} iterations \n`);
+    console.log(`Limit of ${numMaxIteration} iterations reached \n`);
     console.log(`Approximate execution time: ${Math.round((delay * divs.length) / 60)} minutes - byLogan \n`);
     return; // Stop the execution
   }
