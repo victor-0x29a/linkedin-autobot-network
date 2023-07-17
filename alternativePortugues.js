@@ -10,12 +10,13 @@
  */
 
 // DAQ ************
-const passeOIdDaDivSeletora = 'ember1642' // passe apenas a string SEM # // Esse é apenas um valor de exemplo
-const sectorId = document.querySelector(`#${passeOIdDaDivSeletora}`);
-if(sectorId){
-  var divs = sectorId.querySelectorAll('.mt2');
-}else{
-  var divs = document.querySelectorAll('.mt2');
+const passeOIdDaDivSeletora = 'ember388' // passe apenas a string SEM # // Esse é apenas um valor de exemplo
+const sectorId = document.querySelector('#' + passeOIdDaDivSeletora);
+var divs;
+if (sectorId) {
+  divs = sectorId.querySelectorAll('.mt2');
+} else {
+  divs = document.querySelectorAll('.mt2');
 }
 let count = 0; // contador de iterações
 const numMaxIteration = 50; // Numero maximo de iterações, recomendo deixar 50, se precisar atualize e faça de novo
