@@ -1,5 +1,7 @@
 // VERSAO ATUAL não testada ainda...
 
+#IMPORTANTE Não use, sujeito a edições
+
 PORTUGUES
 
 copie apenas o código que você vai usar
