@@ -2,7 +2,7 @@
 // IMPORTANTE
 
 
-// VERSAO ATUAL
+// VERSAO ATUAL não testada
 
 let divs = document.querySelectorAll('.mt2');
 
