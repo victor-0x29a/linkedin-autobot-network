@@ -10,8 +10,10 @@
  */
 
 // DAQ ************
-const passeOIdDaDivSeletora = 'ember388' // passe apenas a string SEM # // Esse é apenas um valor de exemplo
+const passeOIdDaDivSeletora = 'ember890' // passe apenas a string SEM # // Esse é apenas um valor de exemplo
 const sectorId = document.querySelector('#' + passeOIdDaDivSeletora);
+const mainContent = document.querySelector(".scaffold-finite-scroll__content")
+
 var divs;
 if (sectorId) {
   divs = sectorId.querySelectorAll('.mt2');
@@ -29,6 +31,11 @@ function executaMissaoDosConectados() {
       botoes.click();
       count++; // Incrementa o contador de iterações
       console.log(`Enviou conexao ${count} \n`);
+      mainContent.scrollIntoView({
+          behavior: "smooth",
+          block: "end",
+          inline: "nearest",
+        });
     } catch (error) {
       console.log('ERRO DESCONHECIDO \n\n');
       console.log(error);
